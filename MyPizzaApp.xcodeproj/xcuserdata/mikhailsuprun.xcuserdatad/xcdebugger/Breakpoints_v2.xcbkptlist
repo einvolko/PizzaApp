@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3BABAF0A-540F-40D3-9A4D-248CE308AD57"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2FF29FE-1383-47A5-8773-9E60EDFADF5D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPizzaApp/DetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "addAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2FF29FE-1383-47A5-8773-9E60EDFADF5D - 4e2fb09e953c2127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "C2FF29FE-1383-47A5-8773-9E60EDFADF5D - 4e2fb09e953c2127"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75CA24A0-C991-4955-9853-7F86D4B8CFB1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPizzaApp/DetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "addAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "75CA24A0-C991-4955-9853-7F86D4B8CFB1 - 4e2fb09e953c2144"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "75CA24A0-C991-4955-9853-7F86D4B8CFB1 - 4e2fb09e953c2144"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBE477E0-95EC-4976-A31A-0331B216B831"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPizzaApp/DetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "addAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BBE477E0-95EC-4976-A31A-0331B216B831 - 4e2fb09e953c2165"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "BBE477E0-95EC-4976-A31A-0331B216B831 - 4e2fb09e953c2165"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "672">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

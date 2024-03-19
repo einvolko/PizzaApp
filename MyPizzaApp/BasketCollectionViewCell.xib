@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BasketCollectionViewCell" customModule="MyPizzaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="642" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="642" height="244"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-wO-fac">
+                        <rect key="frame" x="0.0" y="0.0" width="256.66666666666669" height="244"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="754" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17L-lZ-BXj">
+                        <rect key="frame" x="526" y="111.66666666666667" width="36" height="21.000000000000014"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="247" horizontalCompressionResistancePriority="747" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ7-4A-Hcx">
+                        <rect key="frame" x="572" y="92" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="LAj-Vc-fYl"/>
+                            <constraint firstAttribute="height" constant="60" id="SA3-Yl-OAI"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" image="trash.square" catalog="system">
+                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="deleteButtonAct:" destination="gTV-IL-0wX" eventType="touchUpInside" id="OIu-c0-QQX"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-rz-4SI">
+                        <rect key="frame" x="276.66666666666669" y="112" width="219.33333333333331" height="20.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZQ7-4A-Hcx" firstAttribute="leading" secondItem="17L-lZ-BXj" secondAttribute="trailing" constant="10" id="7OK-7D-vpA"/>
+                <constraint firstItem="17L-lZ-BXj" firstAttribute="leading" secondItem="gjf-rz-4SI" secondAttribute="trailing" constant="30" id="Jju-A7-0yC"/>
+                <constraint firstItem="yc6-wO-fac" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.4" id="PQE-B3-SPE"/>
+                <constraint firstItem="gjf-rz-4SI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="QYO-n6-Arl"/>
+                <constraint firstItem="ZQ7-4A-Hcx" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="TPq-DU-gLk"/>
+                <constraint firstItem="gjf-rz-4SI" firstAttribute="leading" secondItem="yc6-wO-fac" secondAttribute="trailing" constant="20" id="Uuy-d1-H9H"/>
+                <constraint firstItem="yc6-wO-fac" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fPW-b9-ZmV"/>
+                <constraint firstAttribute="bottom" secondItem="yc6-wO-fac" secondAttribute="bottom" id="gmI-60-hH4"/>
+                <constraint firstItem="yc6-wO-fac" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nK8-K0-2Nt"/>
+                <constraint firstItem="17L-lZ-BXj" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="tqh-aV-su7"/>
+                <constraint firstAttribute="trailing" secondItem="ZQ7-4A-Hcx" secondAttribute="trailing" constant="10" id="v3x-pG-7EW"/>
+            </constraints>
+            <size key="customSize" width="642" height="244"/>
+            <connections>
+                <outlet property="cost" destination="17L-lZ-BXj" id="d4u-BC-Qdg"/>
+                <outlet property="deleteButton" destination="ZQ7-4A-Hcx" id="IsT-zd-DAw"/>
+                <outlet property="imageView" destination="yc6-wO-fac" id="jrh-wn-6U1"/>
+                <outlet property="name" destination="gjf-rz-4SI" id="atK-U2-q5Z"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="4"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="trash.square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
