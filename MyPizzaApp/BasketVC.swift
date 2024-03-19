@@ -54,12 +54,12 @@ class BasketVC: UIViewController {
             textField.text = UserDefaults.standard.string(forKey: textField.placeholder!)
             textField.keyboardType = .numberPad
         }
-        let action1 = UIAlertAction(title: "Cancel", style: .destructive) { action in
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { action in
             for i in alert.textFields! {
                 UserDefaults.standard.setValue(i.text, forKey: i.placeholder!)
             }
         }
-        let action2 = UIAlertAction(title: "Sent", style: .default) { action in
+        let sendAction = UIAlertAction(title: "Sent", style: .default) { action in
             for i in alert.textFields! {
                 UserDefaults.standard.setValue(i.text, forKey: i.placeholder!)
                 print(UserDefaults.standard.string(forKey: i.placeholder!))
@@ -77,8 +77,8 @@ class BasketVC: UIViewController {
             alert.addAction(action)
             self.present(alert, animated: true)
         }
-        alert.addAction(action1)
-        alert.addAction(action2)
+        alert.addAction(cancelAction)
+        alert.addAction(sendAction)
         
         present(alert, animated: true)
     }
