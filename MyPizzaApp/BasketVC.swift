@@ -15,6 +15,8 @@ class BasketVC: UIViewController {
     @IBOutlet weak var basketCV: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        basketCV.backgroundView = nil
+        basketCV.backgroundColor = UIColor .clear
         basketCV.register(UINib(nibName: "BasketCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BasketCollectionViewCell")
         basketCV.register(UINib(nibName: "DefaultCVC", bundle: nil), forCellWithReuseIdentifier: "DefaultCVC")
         totalCostCalculate()
@@ -122,3 +124,4 @@ extension BasketVC: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
         }
     }
 }
+
