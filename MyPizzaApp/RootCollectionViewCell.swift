@@ -49,6 +49,8 @@ class RootCollectionViewCell: UICollectionViewCell, UICollectionViewDataSource, 
     @IBOutlet weak var rootCollectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        rootCollectionView.backgroundView = nil
+        rootCollectionView.backgroundColor = UIColor .clear
         rootCollectionView.dataSource = self
         rootCollectionView.delegate = self
         rootCollectionView.register(UINib(nibName: "MainMenuCell", bundle: nil), forCellWithReuseIdentifier: "MainMenuCell")
