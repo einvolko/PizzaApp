@@ -7,9 +7,13 @@
 
 import UIKit
 
-class BasketCollectionViewCell: UICollectionViewCell {
-    weak var vc : BasketVC?
+protocol BasketCollectionViewCellDelegate: AnyObject {
+    func didTapDelete(cell: UICollectionViewCell)
+}
 
+class BasketCollectionViewCell: UICollectionViewCell {
+    weak var delegate: BasketCollectionViewCellDelegate?
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var name: UILabel!
@@ -24,12 +28,6 @@ class BasketCollectionViewCell: UICollectionViewCell {
     }
 
     @IBAction func deleteButtonAct(_ sender: Any) {
-        basketArray.remove(at: deleteButton.tag)
-        vc?.totalCostCalculate()
-        vc?.isActiveButton()
-        UIView.animate(withDuration: 0.2) {
-            self.vc?.basketCV.reloadData()
-        }
-       
+        delegate?.didTapDelete(cell: self)
     }
 }
