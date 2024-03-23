@@ -16,6 +16,13 @@ struct Product:Codable{
     let type: String
 }
 
+struct BasketItem {
+    let product: Product
+    let quantity: Int
+}
+
+var basketItems = [BasketItem]()
+
 var basketArray = [Product](){
     didSet{
         do{

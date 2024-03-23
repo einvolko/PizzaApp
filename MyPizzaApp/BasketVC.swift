@@ -13,6 +13,7 @@ class BasketVC: UIViewController {
     @IBOutlet weak var totalCost: UILabel!
     @IBOutlet weak var switchDelivery: UISwitch!
     @IBOutlet weak var basketCV: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         basketCV.backgroundView = nil
@@ -53,12 +54,12 @@ class BasketVC: UIViewController {
             textField.text = UserDefaults.standard.string(forKey: textField.placeholder!)
             textField.keyboardType = .numberPad
         }
-        let action1 = UIAlertAction(title: "Cancel", style: .destructive) { action in
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { action in
             for i in alert.textFields! {
                 UserDefaults.standard.setValue(i.text, forKey: i.placeholder!)
             }
         }
-        let action2 = UIAlertAction(title: "Sent", style: .default) { action in
+        let sendAction = UIAlertAction(title: "Sent", style: .default) { action in
             for i in alert.textFields! {
                 UserDefaults.standard.setValue(i.text, forKey: i.placeholder!)
                 print(UserDefaults.standard.string(forKey: i.placeholder!))
@@ -76,8 +77,8 @@ class BasketVC: UIViewController {
             alert.addAction(action)
             self.present(alert, animated: true)
         }
-        alert.addAction(action1)
-        alert.addAction(action2)
+        alert.addAction(cancelAction)
+        alert.addAction(sendAction)
         
         present(alert, animated: true)
     }
@@ -92,7 +93,8 @@ class BasketVC: UIViewController {
         totalCost.text = "Tolal cost \(totalCostInt)"
     }
 }
-extension BasketVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+
+extension BasketVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if  basketArray.count == 0 {
             1
@@ -111,7 +113,7 @@ extension BasketVC: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
             cell.cost.text = basketArray[indexPath.item].cost.description
             cell.name.text = basketArray[indexPath.item].name
             cell.deleteButton.tag = indexPath.item
-            cell.vc = self
+            cell.delegate = self
             setupShadow(cell: cell)
             return cell
         }
@@ -124,4 +126,22 @@ extension BasketVC: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
         }
     }
 }
-
+extension BasketVC: BasketCollectionViewCellDelegate {
+    func didTapDelete(cell: UICollectionViewCell) {
+        guard let indexPath = basketCV.indexPath(for: cell) else { return }
+        //TODO:
+//        basketCV.performBatchUpdates { [weak self] in
+//            basketArray.remove(at: indexPath.row)
+//            if indexPath.row == 0 {
+//                self?.basketCV.deleteSections(IndexSet(integer: 0))
+//            }
+//            self?.basketCV.deleteItems(at: [indexPath])
+//        }
+        basketArray.remove(at: indexPath.row)
+        
+        totalCostCalculate()
+        isActiveButton()
+        
+        basketCV.reloadData()
+    }
+}
