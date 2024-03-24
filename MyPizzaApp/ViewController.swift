@@ -6,8 +6,19 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseStorage
+import FirebaseAuth
+import FirebaseDatabaseInternal
+
+
 
 class ViewController: UIViewController {
+    var ref: DatabaseReference!
+   
+   
+   
     var x:IndexPath?
     var y:IndexPath?
     var bool = false
@@ -15,18 +26,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainCollection: UICollectionView!
     @IBOutlet weak var menuCollection: UICollectionView!
     
-   
-   
+    let db = Firestore.firestore()
+    
     
     var selected : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadBasket()
+        fetchData()
+        
+  
 //        let jsonData = try! JSONEncoder().encode(storage)
 //        let jsonString = String(data: jsonData, encoding: .utf8)!
 //        print(jsonString)
         
+ 
         mainCollection.register(UINib(nibName: "RootCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RootCollectionViewCell")
         menuCollection.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell")
         mainCollection.layer.cornerRadius = 15
@@ -41,12 +56,24 @@ class ViewController: UIViewController {
 //        }
 //        refreshControl.addAction(refreshAction, for: .valueChanged)
 //        mainCollection.refreshControl = refreshControl
-        
-        fetchData()
+//        
     }
+
+    
    
+    
+    
+    
+    
+    
     func fetchData() {
-        Storage.shared.fetchData { [weak self] result in
+        db.collection("Pizza").getDocuments { snapshot, error in
+            for i in snapshot!.documents {
+                print("\(i.documentID) => \(i.data())")
+            }
+        }
+    
+        Storage.shared.newFetcher() { [weak self] result in
             guard let self = self else { return }
             DispatchQueue.main.async {
 //                self.mainCollection.refreshControl?.endRefreshing()
@@ -119,10 +146,10 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
             y = indexPath
         }
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if collectionView == menuCollection {
-            
+    
             self.selected = indexPath.item
             menuCollection.reloadItems(at: [indexPath])
             mainCollection.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)

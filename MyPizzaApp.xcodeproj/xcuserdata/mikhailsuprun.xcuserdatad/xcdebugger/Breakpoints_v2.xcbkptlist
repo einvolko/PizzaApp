@@ -5,49 +5,137 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            uuid = "C2FF29FE-1383-47A5-8773-9E60EDFADF5D"
+            uuid = "6C89CDE2-3D55-480B-97C4-3959262F3B44"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyPizzaApp/DetailVC.swift"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98817112-4106-4664-A011-DC896B223273"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/MyPizzaApp-anivnszzkmkorlbnoqzailezxnko/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabase/Sources/Realtime/FConnection.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "addAction(_:)"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-onMessage:withMessage:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A489E04-EF82-48BB-AE76-282200CC054A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPizzaApp/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "storage"
+            landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "C2FF29FE-1383-47A5-8773-9E60EDFADF5D - 4e2fb09e953c2127"
+                  uuid = "6A489E04-EF82-48BB-AE76-282200CC054A - 44b62c6e85b5d30b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  symbolName = "MyPizzaApp.Storage.storage.didset : Swift.Array&lt;MyPizzaApp.Product&gt;"
                   moduleName = "MyPizzaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/Model.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "84">
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "620">
                </Location>
                <Location
-                  uuid = "C2FF29FE-1383-47A5-8773-9E60EDFADF5D - 4e2fb09e953c2127"
+                  uuid = "6A489E04-EF82-48BB-AE76-282200CC054A - 68bc68e14f45ae5a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  symbolName = "MyPizzaApp.Storage.storage.getter : Swift.Array&lt;MyPizzaApp.Product&gt;"
                   moduleName = "MyPizzaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/Model.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "100">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6A489E04-EF82-48BB-AE76-282200CC054A - b47837c80bebc4e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.Storage.storage.setter : Swift.Array&lt;MyPizzaApp.Product&gt;"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/Model.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6A489E04-EF82-48BB-AE76-282200CC054A - 97bc91bb886fcb6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.Storage.storage.modify : Swift.Array&lt;MyPizzaApp.Product&gt;"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/Model.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6A489E04-EF82-48BB-AE76-282200CC054A - 2dc330c05e01fa4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.Storage.storage.modify : Swift.Array&lt;MyPizzaApp.Product&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6A489E04-EF82-48BB-AE76-282200CC054A - 4e112f2473a2a37f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPizzaApp.Storage.init(storage: Swift.Array&lt;MyPizzaApp.Product&gt;, url: Foundation.URL, urlSession: __C.NSURLSession) -&gt; MyPizzaApp.Storage"
+                  moduleName = "MyPizzaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/Model.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "228">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,47 +143,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "75CA24A0-C991-4955-9853-7F86D4B8CFB1"
+            uuid = "523E4C44-3EA9-4BF5-AEB6-E462D3A5DA9B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyPizzaApp/DetailVC.swift"
+            filePath = "MyPizzaApp/Model.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "addAction(_:)"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "newFetcher(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "75CA24A0-C991-4955-9853-7F86D4B8CFB1 - 4e2fb09e953c2144"
+                  uuid = "523E4C44-3EA9-4BF5-AEB6-E462D3A5DA9B - c572b3babf7de5e5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDataSnapshot&gt;) -&gt; () in MyPizzaApp.Storage.newFetcher(completion: (Swift.Result&lt;Swift.Array&lt;MyPizzaApp.Product&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "MyPizzaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/Model.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "284">
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "772">
                </Location>
                <Location
-                  uuid = "75CA24A0-C991-4955-9853-7F86D4B8CFB1 - 4e2fb09e953c2144"
+                  uuid = "523E4C44-3EA9-4BF5-AEB6-E462D3A5DA9B - c572b3babf7de5e5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;__C.FIRDataSnapshot&gt;) -&gt; () in MyPizzaApp.Storage.newFetcher(completion: (Swift.Result&lt;Swift.Array&lt;MyPizzaApp.Product&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "MyPizzaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/Model.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "300">
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "1044">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -103,49 +191,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BBE477E0-95EC-4976-A31A-0331B216B831"
+            uuid = "9CBE84AE-D939-43E8-A881-9E85CCBEE3A1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyPizzaApp/DetailVC.swift"
+            filePath = "MyPizzaApp/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "addAction(_:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "fetchData()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "BBE477E0-95EC-4976-A31A-0331B216B831 - 4e2fb09e953c2165"
+                  uuid = "9CBE84AE-D939-43E8-A881-9E85CCBEE3A1 - be2a83ffbdeca499"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  symbolName = "MyPizzaApp.ViewController.viewDidLoad() -&gt; ()"
                   moduleName = "MyPizzaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "656">
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "1152">
                </Location>
                <Location
-                  uuid = "BBE477E0-95EC-4976-A31A-0331B216B831 - 4e2fb09e953c2165"
+                  uuid = "9CBE84AE-D939-43E8-A881-9E85CCBEE3A1 - d86915ee7e60ea22"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "MyPizzaApp.DetailVC.addAction(Any) -&gt; ()"
+                  symbolName = "MyPizzaApp.ViewController.fetchData() -&gt; ()"
                   moduleName = "MyPizzaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/DetailVC.swift"
+                  urlString = "file:///Users/mikhailsuprun/Desktop/Develop/Pizzagdfga-main/MyPizzaApp/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "672">
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8602AEA0-55B2-4DB6-BED1-C93EAD68C95B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPizzaApp/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "newFetcher(completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

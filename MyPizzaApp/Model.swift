@@ -6,6 +6,11 @@
 //
 
 import Foundation
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseStorage
+import FirebaseAuth
+import FirebaseDatabaseInternal
 
  let cornerRadius: CGFloat = 25
 
@@ -59,6 +64,7 @@ func loadBasket (){
 //     ]
 
 class Storage {
+    var ref: DatabaseReference!
    static let shared = Storage()
     let url: URL
     let urlSession: URLSession
@@ -96,31 +102,67 @@ class Storage {
         self.url = url
         self.urlSession = urlSession
     }
-    
-    func fetchData(completion: @escaping ((Result<[Product], Error>) -> Void)) {
-        urlSession.dataTask(with: url) { data, response, error in
+    func newFetcher(completion: @escaping ((Result<[Product], Error>) -> Void)){
+        ref = Database.database().reference()
+        ref.getData { error, snapshot in
             if let error = error {
-                print(error);
-                //TODO: show alert
-                completion(.failure(error))
-                return
-            }
-            guard let data = data else {
-                completion(Result.failure(FetchErrors.noData))
-                return
-            }
+                           print(error);
+                           //TODO: show alert
+                           completion(.failure(error))
+                           return
+                       }
+            guard let data = snapshot?.value else {
+                            completion(Result.failure(FetchErrors.noData))
+                            return
+                        }
+            
             do {
-                let products = try JSONDecoder().decode([Product].self, from: data)
-                self.storage = products
+                guard let data = snapshot!.data else { return }
+                self.storage = try JSONDecoder().decode([Product].self, from: data as! Data)
                 completion(Result.success(self.storage))
+                
+              
+                
             }
             catch {
-                completion(Result.failure(error))
-            }
-        }.resume()
+                           completion(Result.failure(error))
+                       }
+                   }
+        
     }
+//    func fetchData(completion: @escaping ((Result<[Product], Error>) -> Void)) {
+//        urlSession.dataTask(with: url) { data, response, error in
+//            if let error = error {
+//                print(error);
+//                //TODO: show alert
+//                completion(.failure(error))
+//                return
+//            }
+//            guard let data = data else {
+//                completion(Result.failure(FetchErrors.noData))
+//                return
+//            }
+//            do {
+//                let products = try JSONDecoder().decode([Product].self, from: data)
+//                                self.storage = products
+//                completion(Result.success(self.storage))
+//            }
+//            catch {
+//                completion(Result.failure(error))
+//            }
+//        }.resume()
+//    }
 }
    
-
+extension DataSnapshot {
+    var data: Data? {
+        guard let value = value, !(value is NSNull) else { return nil }
+        return try? JSONSerialization.data(withJSONObject: value)
+    }
+    var json: String? { data?.string }
+}
+extension Data {
+    var string: String? { String(data: self, encoding: .utf8) }
+}
 
 

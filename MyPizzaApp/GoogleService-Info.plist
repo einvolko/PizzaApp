@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAPSl9iM7tIQDO-CGuSfS6Wcf6_P3VwiKk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>432716261232</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.mikhailSuprun.MyPizzaApp</string>
+	<key>PROJECT_ID</key>
+	<string>mypizzaapp-bc80f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mypizzaapp-bc80f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:432716261232:ios:b35314aea1ec5eca6391b5</string>
+	<key>DATABASE_URL</key>
+	<string>https://mypizzaapp-bc80f-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>
